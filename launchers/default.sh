@@ -16,7 +16,7 @@ dt-launchfile-init
 dt-exec Xvfb :1 -screen 0 1024x768x24 -ac +extension GLX +render -noreset 
 export DISPLAY=:1&
 
-dt-exec rosrun simulation_wrapper simulation_wrapper.py
+dt-exec rosrun simulation_wrapper simulation_wrapper_node.py
 
 # ----------------------------------------------------------------------------
 # YOUR CODE ABOVE THIS LINE
