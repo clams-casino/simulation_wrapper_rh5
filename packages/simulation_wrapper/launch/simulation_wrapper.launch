@@ -1,0 +1,10 @@
+<launch>
+
+  <group ns="$(arg veh)"> 
+
+    <node pkg="simulation_wrapper" type="simulation_wrapper_node.py" name="simulation_wrapper_node"  output="screen">
+    </node>
+
+  </group>
+
+</launch>
