@@ -3,6 +3,8 @@
   <group ns="$(arg veh)"> 
 
     <node pkg="simulation_wrapper" type="simulation_wrapper_node.py" name="simulation_wrapper_node"  output="screen">
+        <remap from="~wheel_cmd" to="/$(arg veh)/test_wheel_cmd"/>
+        <remap from="~joy" to="/$(arg veh)/joy"/>
     </node>
 
   </group>

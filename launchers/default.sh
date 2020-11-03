@@ -13,8 +13,8 @@ dt-launchfile-init
 # NOTE: Use `dt-exec COMMAND` to run the main process (blocking process)
 
 # launching app
-dt-exec Xvfb :1 -screen 0 1024x768x24 -ac +extension GLX +render -noreset 
-export DISPLAY=:1&
+Xvfb :2 -screen 0 1024x768x24 -ac +extension GLX +render -noreset &> xvfb.log &
+export DISPLAY=:2
 
 dt-exec roslaunch simulation_wrapper simulation_wrapper.launch veh:=$VEHICLE_NAME
 
