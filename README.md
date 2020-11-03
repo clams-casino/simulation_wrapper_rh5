@@ -2,7 +2,7 @@ ROS wrapped duckietown-gym which publishes images and subscribes to wheel comman
 
 # Usage
 
-Build it on the laptop. Assuming in the root directory of the repo
+Build it on the laptop. Following commands are run in the root directory of the repo
 ```
 dts devel build -f 
 ```
